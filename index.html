@@ -6,77 +6,82 @@
 <title>Triumphant Julius Collins</title>
 
 <style>
+
 body{
 font-family: Arial, sans-serif;
 margin:0;
 background:#0f172a;
 color:white;
-text-align:center;
 }
 
 header{
+text-align:center;
+padding:60px;
 background:#1e293b;
-padding:40px;
 }
 
-h1{
-font-size:40px;
+header h1{
+font-size:42px;
 margin:0;
 }
 
-p{
+header p{
 color:#cbd5e1;
 }
 
-.container{
+nav{
+text-align:center;
+background:#020617;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:50px;
+text-align:center;
+}
+
+.socials{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
-gap:30px;
-padding:40px;
+gap:25px;
+flex-wrap:wrap;
+margin-top:20px;
 }
 
 .card{
 background:#1e293b;
-width:260px;
 padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.4);
-transition:0.3s;
+border-radius:10px;
+width:250px;
 }
 
-.card:hover{
-transform:scale(1.05);
-}
-
-.card h2{
-margin-top:0;
-}
-
-.btn{
-display:inline-block;
-margin-top:15px;
+button{
 padding:10px 20px;
+border:none;
+border-radius:5px;
 background:#ef4444;
 color:white;
-text-decoration:none;
-border-radius:6px;
+cursor:pointer;
 }
 
-.btn.tiktok{
-background:#111;
-}
-
-.btn.facebook{
-background:#1877f2;
+.video{
+margin-top:30px;
 }
 
 footer{
-margin-top:30px;
+text-align:center;
 padding:20px;
-background:#1e293b;
+background:#020617;
 color:#94a3b8;
 }
+
 </style>
 </head>
 
@@ -84,39 +89,76 @@ color:#94a3b8;
 
 <header>
 <h1>Triumphant Julius Collins</h1>
-<p>Welcome to my social media hub. Follow and subscribe!</p>
+<p>Gospel Drama | Inspiration | Faith</p>
 </header>
 
-<div class="container">
+<nav>
+<a href="#social">Social Media</a>
+<a href="#videos">Videos</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="social">
+<h2>Follow Me</h2>
+
+<div class="socials">
 
 <div class="card">
-<h2>YouTube</h2>
-<p>Watch gospel drama and inspiring videos.</p>
-<a class="btn" href="https://www.youtube.com/@gospeldramastv" target="_blank">
-Visit Channel
+<h3>YouTube</h3>
+<p>Watch my gospel drama videos.</p>
+<a href="https://www.youtube.com/@gospeldramastv">
+<button>Visit Channel</button>
 </a>
 </div>
 
 <div class="card">
-<h2>TikTok</h2>
-<p>Follow me for short inspiring clips.</p>
-<a class="btn tiktok" href="https://www.tiktok.com/@juliustriumphant111" target="_blank">
-Follow TikTok
+<h3>TikTok</h3>
+<p>Short inspiring gospel clips.</p>
+<a href="https://www.tiktok.com/@juliustriumphant111">
+<button>Follow Me</button>
 </a>
 </div>
 
 <div class="card">
-<h2>Facebook</h2>
-<p>Join my Facebook community.</p>
-<a class="btn facebook" href="https://facebook.com/" target="_blank">
-Visit Facebook
+<h3>Facebook</h3>
+<p>Join my community.</p>
+<a href="#">
+<button>Visit Page</button>
 </a>
 </div>
 
 </div>
+</section>
+
+<section id="videos">
+<h2>Featured Video</h2>
+
+<div class="video">
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: your@email.com</p>
+
+<p>For ministry, collaboration, and gospel drama production.</p>
+
+</section>
 
 <footer>
-© 2026 Triumphant Julius Collins
+
+<p>© 2026 Triumphant Julius Collins</p>
+
 </footer>
 
 </body>
